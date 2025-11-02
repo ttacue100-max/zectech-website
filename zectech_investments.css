@@ -1,0 +1,182 @@
+/* ------------------------------
+   ZECTECH GAMING - Responsive CSS
+   Designed for all devices
+   ------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0a0a0a, #1e1e2f);
+  color: #fff;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: #111;
+  color: #00ffcc;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #00ffcc;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h2 {
+  color: #00ffcc;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* ---------- GAME LIST ---------- */
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.game-card {
+  background: #181818;
+  border: 2px solid #00ffcc;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.game-card h3 {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* ---------- WHY CHOOSE US ---------- */
+section.why {
+  margin-top: 3rem;
+}
+
+section.why h3 {
+  color: #00ffcc;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+ul.benefits {
+  list-style: none;
+  display: grid;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+ul.benefits li {
+  background: #222;
+  border-left: 4px solid #00ffcc;
+  padding: 0.8rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+ul.benefits li:hover {
+  background: #333;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #00ffcc;
+}
+
+/* ---------- DEPARTMENT SELECTOR ---------- */
+.department-select {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.department-select select {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background: #00ffcc;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.department-select select:hover {
+  background: #00d9b0;
+}
+
+/* ---------- BACK BUTTON ---------- */
+.back-btn {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 0.7rem 1.5rem;
+  background: #00ffcc;
+  color: #111;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #00d9b0;
+  transform: scale(1.05);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  header {
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  .game-card img {
+    height: 120px;
+  }
+}
